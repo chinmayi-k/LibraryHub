@@ -2,7 +2,7 @@
 
 LibraryHub is a web-based Library Management System developed to simplify book management and borrowing operations. It provides separate functionality for students and administrators to manage books, track borrowing activity, and monitor book availability.
 
-🌐 **Live Website:** https://libraryhub.infinityfreeapp.com/
+🌐 **Live Website:** 
 
 💻 **Source Code:** https://github.com/chinmayi-k/LibraryHub
 
