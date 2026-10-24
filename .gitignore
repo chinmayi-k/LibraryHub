@@ -1,0 +1,12 @@
+# Protect database credentials
+db.php
+
+# Exclude database backups
+*.sql
+*.sql.zip
+
+# Exclude secret configuration files
+.env
+
+# Exclude temporary files
+*.log

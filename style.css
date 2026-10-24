@@ -1,0 +1,368 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #faf8f3;
+    color: #263c30;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #183c2e;
+}
+
+.logo {
+    color: #f0d59b;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #f0d59b;
+}
+
+nav .login-btn {
+    background: #f0d59b;
+    color: #183c2e;
+    padding: 11px 20px;
+    border-radius: 5px;
+}
+
+/* Hero */
+.hero {
+    min-height: 520px;
+    padding: 100px 10%;
+    background: linear-gradient(110deg, #e8eee4, #faf8f3);
+}
+
+.tagline,
+.section-label {
+    color: #9a7740;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.description {
+    max-width: 530px;
+    color: #626d64;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+.explore-btn {
+    display: inline-block;
+    background: #183c2e;
+    color: white;
+    padding: 16px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.explore-btn:hover {
+    background: #315b45;
+}
+
+/* Welcome */
+.welcome {
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.welcome h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.welcome p:last-child {
+    max-width: 620px;
+    margin: auto;
+    color: #626d64;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #183c2e;
+    color: white;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 70px 25px;
+    }
+
+    .welcome h2 {
+        font-size: 27px;
+    }
+}
+
+.catalogue {
+    min-height: 70vh;
+    padding: 70px 8%;
+}
+
+.catalogue h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.catalogue-description {
+    color: #626d64;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.book-card {
+    background: white;
+    padding: 28px;
+    border: 1px solid #e6e4dc;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-icon {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.book-category {
+    color: #9a7740;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.book-card h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.book-author {
+    color: #626d64;
+    margin-bottom: 20px;
+}
+
+.book-stock {
+    color: #315b45;
+    font-weight: bold;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 16px;
+    border: 1px solid #d7ddd5;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+}
+
+.search-form input:focus {
+    outline: 2px solid #9a7740;
+}
+
+.search-form button {
+    padding: 14px 22px;
+    background: #183c2e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.search-form button:hover {
+    background: #315b45;
+}
+
+/* Login and registration pages */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 20px;
+    background: linear-gradient(135deg, #e8eee4, #faf8f3);
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 12px 40px rgba(24, 60, 46, 0.10);
+}
+
+.auth-logo {
+    display: block;
+    color: #183c2e;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.auth-card h1 {
+    color: #183c2e;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.auth-subtitle {
+    color: #626d64;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.auth-card form label {
+    display: block;
+    color: #263c30;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 18px 0 8px;
+}
+
+.auth-card form input {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d7ddd5;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #fff;
+}
+
+.auth-card form input:focus {
+    outline: 2px solid #9a7740;
+    border-color: transparent;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 6px;
+    background: #183c2e;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-button:hover {
+    background: #315b45;
+}
+
+.auth-switch {
+    margin-top: 24px;
+    text-align: center;
+    color: #626d64;
+    font-size: 14px;
+}
+
+.auth-switch a {
+    color: #183c2e;
+    font-weight: bold;
+}
+
+.back-home {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #626d64;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.auth-message {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.auth-message.error {
+    color: #8a2525;
+    background: #fff0f0;
+}
+
+@media (max-width: 500px) {
+    .auth-card {
+        padding: 28px 22px;
+    }
+}.auth-message.success {
+    color: #205c36;
+    background: #e9f7ed;
+}
